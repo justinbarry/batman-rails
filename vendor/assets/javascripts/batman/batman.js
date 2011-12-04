@@ -5814,7 +5814,7 @@
       if (callback != null) {
         set.add(callback);
       }
-      return set;
+      return set || new Batman.SimpleSet;;
     },
     forgetParseExit: $forgetParseExit = function(node, callback) {
       return Batman.removeData(node, 'onParseExit', true);
